@@ -1,0 +1,14 @@
+CREATE TABLE expense (
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+expense_types ENUM('phone','internet','electricity','credit_card','travel','other'),
+companyname VARCHAR(30) NOT NULL,
+invoice_num VARCHAR(30) NOT NULL,       
+month ENUM('April','May','June','July','August','September','October','November','December','January','February','March') NOT NULL,
+created_date Date,
+updated_date Date,
+due_date Date,
+invoice_category ENUM('monthly','yearly','as_and_when'),
+invoice_status ENUM('Paid','Pending'),
+printed ENUM('YES','NO'),
+file VARCHAR(250) NOT NULL
+)

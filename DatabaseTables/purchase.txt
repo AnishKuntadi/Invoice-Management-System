@@ -1,0 +1,12 @@
+CREATE TABLE purchase (
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+companyname VARCHAR(30) NOT NULL,
+invoice_num VARCHAR(30) NOT NULL,       
+month ENUM('April','May','June','July','August','September','October','November','December','January','February','March') NOT NULL,
+created_date Date,
+updated_date Date,
+invoice_category ENUM('Regular','Extra'),
+invoice_status ENUM('Paid','Pending'),
+printed ENUM('YES','NO'),
+file VARCHAR(250) NOT NULL
+)

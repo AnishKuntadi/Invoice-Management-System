@@ -1,0 +1,8 @@
+CREATE TABLE payment (
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+invoice_id VARCHAR(30) NOT NULL,
+client_name VARCHAR(30) NOT NULL,
+payment_type ENUM('Cash','Cheque','Net Banking'), 
+paid_date Date,
+paid_amount int(30) NOT NULL
+)

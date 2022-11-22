@@ -1,0 +1,14 @@
+CREATE TABLE `images` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+  `companyname` varchar(50) NOT NULL,
+  `invoice_num` varchar(50) NOT NULL,
+  `month` ENUM('April','May','June','July','August','September','October','November','December','January','February','March') NOT NULL,
+  `created_date` Date,
+  `updated_date` Date,
+  `invoice_category` ENUM('Regular','Extra'),
+  `invoice_status` ENUM('Paid','Pending'),
+  `printed` ENUM('YES','NO'),
+  `file_name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `uploaded_on` datetime NOT NULL,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
